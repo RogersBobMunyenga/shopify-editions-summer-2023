@@ -1,7 +1,7 @@
 import isShopAvailable from "@/utils/middleware/isShopAvailable";
 import { useAppBridge } from "@shopify/app-bridge-react";
 import { Redirect } from "@shopify/app-bridge/actions";
-import { Layout, LegacyCard, Page, Text } from "@shopify/polaris";
+import { Layout, LegacyCard, Link, Page, Text } from "@shopify/polaris";
 import { useRouter } from "next/router";
 
 //On first install, check if the store is installed and redirect accordingly
@@ -39,7 +39,30 @@ const HomePage = () => {
               <strong>Exploring Polaris v11 v/s v12 changes</strong>. Click the
               button on top right to switch between v11 and v12 beta.
             </li>
-            <li></li>
+            <li>
+              <Link
+                onClick={() => {
+                  router.push("/patterns");
+                }}
+              >
+                Polaris Pattern Pages
+              </Link>
+              , because it's necessary to get a good feel of how they'll be
+              changing from v11 to v12. Note that Polaris guidelines will
+              probably change so this is just to get a feel of things.
+            </li>
+            <li>
+              <strong>Config as code</strong>. This is great for managing
+              dev/staging/production environments, to a certain extent. More on
+              this{" "}
+              <Link
+                onClick={() => {
+                  router.push("/experiments/config-as-code");
+                }}
+              >
+                here
+              </Link>
+            </li>
           </LegacyCard>
         </Layout.Section>
       </Layout>

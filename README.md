@@ -8,4 +8,4 @@ Things can and will break, please don't use it in production.
 
 ## Notes
 
-I'm going to take notes of what's up in [NOTES](/docs/NOTES.md) so you can read off those.
+Notes are cleanly organized in the app itself, so once you get the app up and running, you can see things live and in action. This is deliberately done so I don't get comments on features you haven't even tried out yet.
