@@ -4,6 +4,9 @@
 # _developer/
 # docs/
 database/
+shopify.app.dev.toml
+shopify.app.prod.toml
+shopify.app.staging.toml
 
 # dependencies
 package-lock.json
